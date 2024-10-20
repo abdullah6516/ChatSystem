@@ -16,7 +16,7 @@ return new class extends Migration {
             $table->foreignIdFor(User::class, 'from');
             $table->foreignIdFor(User::class, 'to');
             $table->text('message');
-            $table->enum('type', ['text', 'file', 'signs']);
+            $table->enum('type', ['text', 'file']);
             $table->timestamp('read_at')->nullable();
             $table->softDeletes();
             $table->timestamps();
