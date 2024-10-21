@@ -22,5 +22,5 @@ Route::controller(ChatController::class)
         Route::get('/getMessages/{id}', 'selectConversation');
         Route::post('/send', 'send');
         Route::post('/upload', 'upload');
-        Route::put('/read/{receiver}', 'upload');
+        Route::put('/read/{receiver}', 'readAt');
     });

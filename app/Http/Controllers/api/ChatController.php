@@ -58,8 +58,6 @@ class ChatController extends Controller
     }
 
 
-
-
     public function getChat()
     {
         $authUserId = Auth::id();
